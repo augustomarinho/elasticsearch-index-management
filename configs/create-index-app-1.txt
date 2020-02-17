@@ -1,0 +1,8 @@
+PUT /%3Cm4u-lio-logs-%7Bnow%2Fd%7D-1%3E
+{
+  "aliases": {
+    "alias-write-m4u-logs": {
+      "is_write_index": true
+    }
+  }
+}

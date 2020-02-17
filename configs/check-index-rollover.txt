@@ -1,0 +1,6 @@
+POST /alias-write-m4u-logs/_rollover?dry_run
+{
+  "conditions": {
+    "max_docs":  1
+  }
+}

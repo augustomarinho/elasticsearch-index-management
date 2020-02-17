@@ -1,0 +1,12 @@
+POST alias-write-m4u-logs-2/_doc/
+{
+   "@timestamp":"2020-02-17T16:28:13.574+00:00",
+   "@version":1,
+   "message":"Indice App 2",
+   "logger_name":"com.am.study.application.controllers.ControllerExample",
+   "thread_name":"http-nio-8080-exec-3",
+   "level":"INFO",
+   "level_value":20000,
+   "CPF":"12345678909",
+   "identidade":"IFP-12344"
+}

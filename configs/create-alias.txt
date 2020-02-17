@@ -1,0 +1,11 @@
+POST /_aliases
+{
+  "actions": [
+    {
+      "add": {
+        "index": "m4u-lio-logs-*",
+        "alias": "m4u-logs"
+      }
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+PUT _template/m4u-template
+{
+  "order": 0,
+  "index_patterns": [
+    "m4u-lio-logs-*"
+  ],
+  "settings": {
+    "index": {
+      "lifecycle": {
+        "name": "m4u-policy",
+        "indexing_complete" : "true",
+        "rollover_alias": "alias-write-m4u-logs"
+      },
+      "number_of_shards": "1",
+      "number_of_replicas": "1",
+      "refresh_interval": "30s"
+    }
+  },
+  "aliases": {
+    "m4u-logs": {}
+  }
+}

@@ -1,0 +1,34 @@
+PUT _ilm/policy/m4u-policy
+{
+  "policy" : {
+      "phases" : {
+        "hot" : {
+          "actions" : {
+            "rollover" : {
+              "max_size" : "1kb",
+              "max_docs": 1
+            }
+          }
+        },
+        "warm" : {
+          "actions" : {
+            "forcemerge" : {
+              "max_num_segments" : 1
+            }
+          }
+        },
+        "cold" : {
+          "min_age" : "10s",
+          "actions" : {
+            "freeze" : { }
+          }
+        },
+        "delete" : {
+          "min_age" : "1m",
+          "actions" : {
+            "delete" : { }
+          }
+        }
+      }
+    }
+}
