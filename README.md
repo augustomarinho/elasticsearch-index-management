@@ -44,6 +44,6 @@ For testing the index aggregation in the same reading alias, run the commands be
 
 1.  [check-index-app-2.txt](configs/create-index-app-2.txt)
 
-2.  Edit de timestamp value for curent time, before running [write-idex-app-2.txt](configs/write-idex-app-2.txt)
+2.  Edit de timestamp value for curent time, before running [write-index-app-2.txt](configs/write-index-app-2.txt)
 
 Following this steps, It's possible test the roll over index using ILM (Index Lifecycle Management) from Elastic Search
