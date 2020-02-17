@@ -1,0 +1,6 @@
+POST /alias-write-m4u-logs/_rollover
+{
+  "conditions": {
+    "max_docs":  1
+  }
+}
