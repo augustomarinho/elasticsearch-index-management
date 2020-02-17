@@ -10,7 +10,7 @@ Check out this project and following thisa above steps:
 
 4. Run `docker run -d --name springboot-app \ --label elastic_index=springboot \ --label send.logs=true \ -p 8002:8080 \ augustomarinho/springboot-fluentd-appender`
 
-5. Edit your Elastic Search IP in [filebeat.yml](filbeat/filebeat.yml)
+5. Edit your Elastic Search IP in [filebeat.yml](filebeat/filebeat.yml)
 
 6. Run `docker run -d \ --name=filebeat \ --user=root \ --volume="$(pwd)/configs/filebeat/filebeat.yml:/usr/share/filebeat/filebeat.yml:ro" \ --volume="/var/lib/docker/containers:/var/lib/docker/containers:ro" \ --volume="/var/run/docker.sock:/var/run/docker.sock:ro" \ docker.elastic.co/beats/filebeat:7.0.0 filebeat -e -strict.perms=false`
 
