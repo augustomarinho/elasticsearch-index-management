@@ -36,7 +36,7 @@ For you check roll over index working, run the commands below in [Kibana Dev Too
 
 1. [check-index-rollover.txt](configs/check-index-rollover.txt)
 
-2. [roll over-index.txt](configs/rollover-index.txt)
+2. [roll-over-index.txt](configs/rollover-index.txt)
 
 3. Write more documents in rolled over index. Run `curl -X GET http://localhost:8002/query/cpf/12345678909 -i`
 
